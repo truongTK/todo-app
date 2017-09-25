@@ -1,12 +1,11 @@
 # todo-app
-todo-app
 
-Framework: Meteor
-DB: Mongodb
+Framework: Meteor - https://www.meteor.com/
+DB: Mongodb - No Relational Database.
 
 DB schema: collections schema is defined in file "/lib/colection.js"
 
-Run and Install:
+Run and Install (Linux/Mac):
 
 Run on web/webview:
 sh run.sh web
@@ -21,7 +20,7 @@ Run on iphone (Mac only):
 sh run.sh ios-device
 
 Run on android:
-sh run.sh android
+sh run.sh android-device
 
-Your computer need to install some prerequisites,
-please read http://guide.meteor.com/mobile.html#installing-prerequisites.
+When run on android or ios, your computer need to install some prerequisites.
+Please read http://guide.meteor.com/mobile.html#installing-prerequisites if you run unsuccessfully.
