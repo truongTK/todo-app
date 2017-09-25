@@ -74,7 +74,6 @@ class List extends Component {
             <button
               style={{backgroundColor: 'gray'}}
               onClick={() => this.onAddItem()}>Submit</button>
-
             </div>
             { // render Item
               items.map((item) => (
