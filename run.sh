@@ -8,7 +8,14 @@ case "$1" in
   printf "\n===================== Run in webview mode... ========================\n"
   npm start
     ;;
+  'android')
+  printf "\n===================== Run in android emulator... ========================\n"
+  meteor install-sdk android
+  meteor add-platform android
+  meteor run android
+    ;;
   'ios')
+  printf "\n===================== Run in ios emulator (MAC)... ========================\n"
   meteor install-sdk ios
   meteor add-platform ios
   gem install cocoapods
@@ -16,5 +23,17 @@ case "$1" in
   cd .meteor/local/cordova-build/platforms/ios/cordova
   meteor npm install ios-sim@latest
   meteor run ios
+    ;;
+  'android-device')
+  printf "\n===================== Run in android ... ========================\n"
+  meteor install-sdk android
+  meteor add-platform android
+  meteor run android-device
+    ;;
+  'ios-device')
+  printf "\n===================== Run in iphone(MAC) ... ========================\n"
+  meteor install-sdk ios
+  meteor add-platform ios
+  meteor run ios-device
     ;;
 esac
